@@ -1,6 +1,8 @@
 package com.qa.todo;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
@@ -48,8 +50,34 @@ public class TodoServiceUnitTest {
 		
 		assertThat(this.service.updateTodo(newTodo, id)).isEqualTo(updatedTodo);
 		
+		Mockito.verify(this.repo, Mockito.times(1)).findById(id);
+		Mockito.verify(this.repo, Mockito.times(1)).save(updatedTodo);
+		
 		
 	}
+	@Test
+	void testGet() {
+		Todo todo = new Todo("shopping 2", "23/08/2019", "get eggs and milk");
+		todo.setId(1L);
+		List<Todo> todos = new ArrayList<>();
+		todos.add(todo);
+		Mockito.when(this.repo.findAll()).thenReturn(todos);
+		assertThat(this.service.getTodo()).isEqualTo(todos);
+		Mockito.verify(this.repo, Mockito.times(1)).findAll();
+	}
 	
-	
+	@Test
+	void testDelete() {
+		// GIVEN
+		Long id = 1L;
+		boolean found = false;
+
+		// WHEN
+		Mockito.when(this.repo.existsById(id)).thenReturn(found);
+
+		// THEN
+		assertThat(this.service.deleteTodo(id)).isEqualTo(!found);
+
+		Mockito.verify(this.repo, Mockito.times(1)).existsById(id);
+	}
 }
