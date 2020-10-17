@@ -29,16 +29,16 @@ To meet the requirements that the project has specified I have included in my pr
 Link to Risk Assessment: https://drive.google.com/file/d/1FMS2-W0sFldtJT-DQJNYTlD0vz56ssUM/view?usp=sharing
 [![Risk Assesment](https://i.imgur.com/0ujemcS.jpg "Risk Assesment")](https://i.imgur.com/0ujemcS.jpg "Risk Assesment")
 
-##ERD 
+## ERD 
 Due to the simplicity of the project, there is only one small table for the database. The ERD can be seen below:
 [![ERD](https://i.imgur.com/rO5DRS4.jpg "ERD")](https://i.imgur.com/rO5DRS4.jpg "ERD")
-##Testing
+## Testing
 Two test the backend JAVA files, JUnit and Mockito tests were created to test all of the functions within the code. These tests are designed to input variables into the function with a known expected outcome to confirm the logic of the function is working correctly. 
 
 To achieve an acceptable level of testing, all of the CRUD functionality must be covered as well as a general coverage of 80%. As shown below, a coverage of 90% was achieved across all of the classes within the backend. 
 
 [![Testing Coverage](https://i.imgur.com/dDSJSJ1.jpg "Testing Coverage")](https://i.imgur.com/dDSJSJ1.jpg "Testing Coverage")
-##Front-End Design
+## Front-End Design
 The original goal for this project was to design a front end that replicates a traditional cork board that people would have originally used to store ideas. The idea for this website was to fuse traditional none-digital elements of a task board with the modernity of digital solutions. 
 
 Many people find comfort in non-digital solutions, even in the modern digital world. The idea of this board is that people can have the website open on a second or third monitor to store their to-do tasks. This could be particularly useful for software developers who most often work on multiple monitors at the same time. 
@@ -59,11 +59,11 @@ As the user creates more pages, the cards automatically stack and resize for rea
 
 When the update button is pressed on any sticky note, an update box appears. This is automatically hidden before this button is pressed to avoid confusion and to improve usability for the user.
 [![Usability](https://i.imgur.com/O0TMNgP.jpg "Usability")](https://i.imgur.com/O0TMNgP.jpg "Usability")
-##Bugs & Known Issues
+## Bugs & Known Issues
 The functionality of this website is fairly basic, and there are not many things that can fail in terms of the front end of the program. 
 
 The only issue that I am aware of at the moment is that the update button will not hide if the delete button is pressed on the task that is set to update. Although this bar is then removed if the page is refreshed. Although it is an issue, it does not affect the core functionality of the website and is not a serious threat.
-##Future Improvements/Stretch Goals
+## Future Improvements/Stretch Goals
 As set out in my original project plan, there were some stretch goals outlined. The ultimate aim of the project is to make the board feel as traditional and non-digital as possible. To do this I would like to add a few features that give the user maximum control over the board. Three things that I would like to add to achieve this are:
 
 - Ability to change the colour of the post it notes so that the user can organise tasks based on their priority and urgency.
