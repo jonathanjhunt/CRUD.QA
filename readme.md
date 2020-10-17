@@ -69,5 +69,6 @@ As set out in my original project plan, there were some stretch goals outlined. 
 - Ability to change the colour of the post it notes so that the user can organise tasks based on their priority and urgency.
 - Ability to move the post it notes around the page with complete freedom so they can sort the notes into different sections of the page for organisation.
 - Ability for the user to add their own images. If this website is going to be kept open on a screen, it would be nice for a user to add pictures of their family, like on a traditional board. This adds a level of personalisation to the page that will keep the user interested in the website and encourage return traffic.
-##Author
+
+## Author
 Jonathan Hunt
