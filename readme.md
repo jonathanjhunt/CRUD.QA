@@ -11,16 +11,18 @@ The outlines of this project have been determined in the specification. The task
 
 In this project I have designed a functioning website that allows a user to create tasks on post-it notes. The functionality of the website allows the user to "create, read, update and delete" values in a database that can be read and rendered by the front end to meet the specification of the project. 
 
-##Requirements
+## Requirements
 To meet the requirements that the project has specified I have included in my project:
 
-- An agile scrum board
-- A database that includes one table
-- A functioning java based backend that adheres to best practice and design principles
-- A functioning front end with javascript functionality that connects tot he backend via an API
-- Testing of the backend that provides a coverage of 90%
-- Evidence of GIT staging to ensure best practices were met during code development
-- A detailed read-me explaining the process of development.
+- A Jira board with full expansion on user stories, use cases and tasks needed to complete the project.
+- Clear Documentation from a design phase describing the architecture you will use for your project.
+- A detailed Risk Assessment created at the beginning of your project.
+- A relational database used to store data persistently for the project.
+- A functional application created in the OOP language, following best practices and design principles, that you have covered during training, this application needs to meet the requirements set on your Kanban Board
+- The application must have a functioning front-end website and integrated API.
+- Fully designed test suites for the application you are creating, as well as automated tests for validation of the application.
+- You must meet an acceptable level of test coverage in your backend and provide consistent reports and evidence that you have done so.
+- Code fully integrated into a Version Control System
 
 ## Development Proccess
 [![Agile Board](https://i.imgur.com/3aQUXXi.jpg "Agile Board")](https://i.imgur.com/3aQUXXi.jpg "Agile Board")
