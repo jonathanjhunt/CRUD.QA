@@ -79,13 +79,22 @@ As set out in my original project plan, there were some stretch goals outlined. 
 Jonathan Hunt
 
 ## Acknowledgements
+
 Postman: https://www.postman.com/
+
 SpringBoot: https://spring.io/projects/spring-boot
+
 Jira: https://www.atlassian.com/software/jira
+
 Eclipse: https://www.eclipse.org/
+
 Visual Studio Code: https://code.visualstudio.com/
+
 Bootstrap: https://getbootstrap.com/
+
 JUnit: https://junit.org/junit5/
+
 Mockito: https://site.mockito.org/
+
 Git: https://github.com/
 
