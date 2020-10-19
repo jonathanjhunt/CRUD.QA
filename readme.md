@@ -1,8 +1,8 @@
 ## STICK.ME Online To-Do List (CRUD Project 1) - Jonathan Hunt (QA CN)
 
 ### Resources:
-- Presentation:
-- Agile Project Plan: https://qatraineerelder.atlassian.net/jira/software/projects/TW/boards/5
+- Presentation:https://drive.google.com/file/d/1XdsQH2Pwc4zPnyQx8gx_dzeAJvGzN2O-/view?usp=sharing
+- Agile Project Plan: https://jhunt-qa.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=TDP&selectedIssue=TDP-10
 - Website: http://127.0.0.1:5500/main.html
 
 ### Brief
