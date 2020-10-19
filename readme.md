@@ -25,6 +25,9 @@ To meet the requirements that the project has specified I have included in my pr
 - Code fully integrated into a Version Control System
 
 ## Development Proccess
+The project was planned using a Jira board. This was a useful tool for keeping track of the tasks required to meet the MVP for the project. Setting out requiremets in the format of a User Story makes it easy to visualise a task that needs to be completed and put it into action. 
+
+The Jira board gives the option to track which tasks have been completed, which are still in progress and what is left to be done. This allows you to keep on schedule with advancements in the project.
 [![Agile Board](https://i.imgur.com/3aQUXXi.jpg "Agile Board")](https://i.imgur.com/3aQUXXi.jpg "Agile Board")
 
 ## Risk Assessment
@@ -74,3 +77,15 @@ As set out in my original project plan, there were some stretch goals outlined. 
 
 ## Author
 Jonathan Hunt
+
+## Acknowledgements
+Postman: https://www.postman.com/
+SpringBoot: https://spring.io/projects/spring-boot
+Jira: https://www.atlassian.com/software/jira
+Eclipse: https://www.eclipse.org/
+Visual Studio Code: https://code.visualstudio.com/
+Bootstrap: https://getbootstrap.com/
+JUnit: https://junit.org/junit5/
+Mockito: https://site.mockito.org/
+Git: https://github.com/
+
