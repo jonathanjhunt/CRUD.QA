@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <style>
+        body {
+            background-image:url("Media/H2bVfW.jpg");
+            background-position: left top;
+            background-repeat: repeat;
+           
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Stick.Me Online To-Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+    <h1>STICK.ME</h1>
+    <div id="createDiv">
+        <h3>Create your task</h3>
+        
+        <form class="ml-3" id="createForm">
+            
+            <div class="form-group">
+                <label for="subjectInput">Subject:</label>
+                <input class="w-25 form-control" id="subjectInput" placeholder="Please enter a subject" name="subject" />
+            </div>
+            <div class="form-group">
+                <label for="dateInput">Date:</label>
+                <input class="w-25 form-control" id="dateInput" placeholder="Please enter a date" name="date" />
+            </div>
+            <div class="form-group">
+                <label for="tasksInput">Your to-do:</label>
+                <input class="w-25 form-control" id="taskInput" placeholder="Please enter your tasks:" name="task" />
+            </div>
+            <button class="btn btn-primary" type="submit">Create ya task boiiii</button>
+            </form>
+    </div>
+
+    <div id="readDiv" class="card-deck m-5">
+
+    </div>
+    <script src=index.js></script>
+</body>
+
+</html>
