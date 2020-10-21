@@ -1,5 +1,6 @@
 const createForm = document.getElementById("createForm");
 const todoOutput = document.getElementById("readDiv");
+const updateForm = document.getElementById("updateForm");
 
 
 createForm.addEventListener('submit', function (event) {
@@ -22,6 +23,36 @@ createForm.addEventListener('submit', function (event) {
     }).then(response => {
         return response.json();
     }).then(data => {
+        renderTodo();
+        this.reset();
+        console.log(data);
+    }).catch(error => console.log(error));
+
+
+});
+
+updateForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    let id = localStorage.getItem("id");
+    const data = {
+
+        subject: this.subject.value,
+        date: this.date.value,
+        task: this.task.value
+    };
+
+    fetch("http://localhost:8082/update?id=" + id, {
+        method: "PUT",
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': "application/json"
+        }
+
+    }).then(response => {
+        return response.json();
+    }).then(data => {
+        renderTodo();
+        this.reset();
         console.log(data);
     }).catch(error => console.log(error));
 
@@ -42,9 +73,13 @@ function renderTodo() {
                 card.className = "card";
                 // card.setAttribute("class", "card");
                 todoOutput.appendChild(card);
-
+               
+                const cardImage = document.createElement("img");
+                cardImage.className = "card-img";
+                cardImage.src = "https://i.imgur.com/9Sd4VVA.png";
+                card.appendChild(cardImage);
                 const cardBody = document.createElement("div");
-                cardBody.className = "card-body";
+                cardBody.className = "card-img-overlay";
                 card.appendChild(cardBody);
 
                 const subject = document.createElement("h5");
@@ -53,22 +88,31 @@ function renderTodo() {
                 cardBody.appendChild(subject);
 
                 const date = document.createElement("p");
-                date.className = "card-body";
+                date.className = "card-text";
                 date.innerText = "Date: " + todo.date;
                 cardBody.appendChild(date);
 
                 const task = document.createElement("p");
-                task.className = "card-body";
+                task.className = "card-text";
                 task.innerText = "Task: " + todo.task;
                 cardBody.appendChild(task);
 
-                const deleteButton = document.createElement("a");
+                const deleteButton = document.createElement("b");
                 deleteButton.className = "card-link";
                 deleteButton.innerText = "Delete";
                 deleteButton.addEventListener("click", function () {
                     deleteTask(todo.id);
                 })
                 cardBody.appendChild(deleteButton);
+
+                const updateButton = document.createElement("b");
+                updateButton.className = "card-link";
+                updateButton.innerText = "Update";
+                updateButton.addEventListener("click", function () {
+                    localStorage.setItem("id", todo.id)
+                    showTable();
+                })
+                cardBody.appendChild(updateButton);
             });
 
         
@@ -85,3 +129,13 @@ function deleteTask(id) {
         renderTodo();
     }).catch(error => console.error(error));
 }
+
+function showTable(){
+    document.getElementById('updateInputs').style.display = "block";
+}
+function hideTable() {
+    console.log("ran function hide table")
+    document.getElementById('updateInputs').style.display = "none";
+    
+ }
+ 

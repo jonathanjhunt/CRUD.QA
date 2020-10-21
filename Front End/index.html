@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-    <meta http-equiv="refresh" content="5; url='./main.html'" />
+    <meta http-equiv="refresh" content="3; url='./main.html'" />
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>U-SCRIBBLE</title>
     <style>
+        body {
+            background-image: url("Media/logo.png"), url("Media/H2bVfW.jpg");
+            background-position: 50%-50%, left top;
+            background-repeat: no-repeat, repeat;
+            background-size: 100%,100%;
+            
+           
+        }
         div {
-            transform: translate(0px,350px);
+            transform: translate(0px,200px);
         }
     </style>
 </head>
 
 <body>
+    
     <iframe src="/Media/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-    <div> U-SCRIBBLE
+    <div> 
     </div>
     <audio id="player" autoplay hidden>
         <source src="Media/ElectricTypewriter_S011T_22.wav" type="audio/mp3">
